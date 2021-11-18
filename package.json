@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jeordanecarlosbatista/api-with-auth-authorization-scope/issues"
   },
-  "homepage": "https://github.com/jeordanecarlosbatista/api-with-auth-authorization-scope#readme"
+  "homepage": "https://github.com/jeordanecarlosbatista/api-with-auth-authorization-scope#readme",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
 }
