@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "start": "node ./dist/main/server.js",
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/main/server.ts",
+    "test": "jest --passWithNoTests --runInBand --no-cache"
   },
   "repository": {
     "type": "git",
@@ -17,12 +19,17 @@
   },
   "homepage": "https://github.com/jeordanecarlosbatista/api-with-auth-authorization-scope#readme",
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.3",
     "jest": "^27.3.1",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
