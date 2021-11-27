@@ -1,10 +1,10 @@
-import env from './config/env';
+import { PostgresHelper } from '@infra/db/postgres';
 
-async function start() {
+import env from '@main/config/env';
+
+PostgresHelper.connect(env.postgresUrl).then(async () => {
   const { setupApp } = await import('./config/app');
   const app = await setupApp();
   // eslint-disable-next-line no-console
   app.listen(env.port, () => console.log(`Server running at http://localhost:${env.port}`));
-}
-
-start();
+});

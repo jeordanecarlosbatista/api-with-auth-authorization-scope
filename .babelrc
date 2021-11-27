@@ -15,7 +15,8 @@
             "module-resolver", {
                 "root": ["./src"],
                 "alias": {
-                    "@main": "./src/main"
+                    "@main": "./src/main",
+                    "@infra": "./src/infra"
                 }
             }
         ]

@@ -2,19 +2,19 @@ version: '3.8'
 
 services:
   
-  api:
-    container_name: api-container
-    image: node:16
-    working_dir: /usr/src/api
-    restart: always
-    command: bash -c "npm install --only=prod && npm start"
-    volumes:
-        - ./dist/:/usr/src/api/dist/
-        - ./package.json:/usr/src/api/package.json
-    ports:
-        - 3333:3333
-    networks:
-      - api-network
+  # api:
+  #   container_name: api-container
+  #   image: node:16
+  #   working_dir: /usr/src/api
+  #   restart: always
+  #   command: bash -c "npm install --only=prod && npm start"
+  #   volumes:
+  #       - ./dist/:/usr/src/api/dist/
+  #       - ./package.json:/usr/src/api/package.json
+  #   ports:
+  #       - 3333:3333
+  #   networks:
+  #     - api-network
 
   postgres:
     container_name: postgres-container

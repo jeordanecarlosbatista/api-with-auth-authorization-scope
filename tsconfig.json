@@ -9,7 +9,8 @@
     "strict": true,                                 
     "baseUrl": "./",                           
     "paths": {
-      "@main/*": ["./src/main/*"]
+      "@main/*": ["./src/main/*"],
+      "@infra/*": ["./src/infra/*"]
     },                                 
     "typeRoots": [
       "./node_modules/@types",
