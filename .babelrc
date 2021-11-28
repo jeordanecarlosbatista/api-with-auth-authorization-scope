@@ -15,8 +15,11 @@
             "module-resolver", {
                 "root": ["./src"],
                 "alias": {
+                    "@data": "./src/data",
+                    "@domain": "./src/domain",
                     "@main": "./src/main",
-                    "@infra": "./src/infra"
+                    "@infra": "./src/infra",
+                    "@test": "./__tests__"
                 }
             }
         ]

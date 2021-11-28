@@ -2,7 +2,7 @@ import { PostgresHelper } from '@infra/db/postgres';
 
 import env from '@main/config/env';
 
-PostgresHelper.connect(env.postgresUrl).then(async () => {
+PostgresHelper.connect().then(async () => {
   const { setupApp } = await import('./config/app');
   const app = await setupApp();
   // eslint-disable-next-line no-console

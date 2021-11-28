@@ -9,8 +9,11 @@
     "strict": true,                                 
     "baseUrl": "./",                           
     "paths": {
+      "@data/*": ["./src/data/*"],
+      "@domain/*": ["./src/domain/*"],
       "@main/*": ["./src/main/*"],
-      "@infra/*": ["./src/infra/*"]
+      "@infra/*": ["./src/infra/*"],
+      "@test/*": ["./__tests__/*"]
     },                                 
     "typeRoots": [
       "./node_modules/@types",
