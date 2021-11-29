@@ -21,6 +21,8 @@
         "no-redeclare": "off",
         "no-unused-vars": "off",
         "class-methods-use-this": "off",
+        "no-useless-constructor": "off",
+        "no-empty-function": "off",
         "import/extensions": ["error", "never", {"ignorePackages": true } ],
         "max-len": ["error", { "code": 500 }]
     }
