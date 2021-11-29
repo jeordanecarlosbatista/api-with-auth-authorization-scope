@@ -9,5 +9,10 @@ export namespace AddAccount {
         password: string,
     }
 
-    export type Result = boolean;
+    export type Result = {
+        id: number,
+        name: string,
+        email: string,
+        accessToken: string
+    };
 }
