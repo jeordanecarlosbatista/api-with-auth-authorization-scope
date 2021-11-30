@@ -27,7 +27,6 @@ export const PostgresHelper = {
   client: prisma,
 
   async connect(): Promise<void> {
-    await prisma.$connect();
   },
 
   async disconnect(): Promise<void> {
