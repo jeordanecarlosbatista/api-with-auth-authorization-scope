@@ -12,7 +12,9 @@
       "@data/*": ["./src/data/*"],
       "@domain/*": ["./src/domain/*"],
       "@main/*": ["./src/main/*"],
+      "@presentation/*": ["./src/presentation/*"],
       "@infra/*": ["./src/infra/*"],
+      "@validation/*": ["./src/validation/*"],
       "@test/*": ["./__tests__/*"]
     },                                 
     "typeRoots": [

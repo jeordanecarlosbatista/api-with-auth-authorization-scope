@@ -8,6 +8,8 @@
     "dev": "cross-env NODE_ENV=development ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/main/server.ts",
     "test": "jest --passWithNoTests --runInBand --no-cache",
     "test:staged": "npm test --bail --findRelatedTests",
+    "test:ci": "npm test -- --coverage",
+    "test:coveralls": "npm run test:ci && coveralls < coverage/lcov.info",
     "build": "rimraf dist && babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "check": "npm-check -s -u"
   },
@@ -39,6 +41,7 @@
     "@types/rimraf": "^3.0.2",
     "@types/supertest": "^2.0.11",
     "@types/swagger-ui-express": "^4.1.3",
+    "@types/validator": "^13.7.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "babel-plugin-module-resolver": "^4.1.0",
@@ -65,6 +68,7 @@
     "pg": "^8.7.1",
     "prisma": "^3.5.0",
     "rimraf": "^3.0.2",
-    "swagger-ui-express": "^4.1.6"
+    "swagger-ui-express": "^4.1.6",
+    "validator": "^13.7.0"
   }
 }

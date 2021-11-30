@@ -1,3 +1,7 @@
+import components from './components';
+import paths from './paths';
+import schemas from './schemas';
+
 export default {
   openapi: '3.0.0',
   info: {
@@ -20,7 +24,10 @@ export default {
   },
   servers: [{
     url: '/api',
-    description: 'Servidor Principal',
+    description: 'Main Server',
   }],
   tags: [],
+  paths,
+  schemas,
+  components,
 };

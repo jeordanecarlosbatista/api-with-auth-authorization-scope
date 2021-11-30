@@ -18,6 +18,8 @@
                     "@data": "./src/data",
                     "@domain": "./src/domain",
                     "@main": "./src/main",
+                    "@presentation": "./src/presentation",
+                    "@validation": "./src/validation",
                     "@infra": "./src/infra",
                     "@test": "./__tests__"
                 }
