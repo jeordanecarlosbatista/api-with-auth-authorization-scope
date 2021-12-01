@@ -24,7 +24,7 @@ services:
         POSTGRES_USER: admin
         POSTGRES_PASSWORD: admin
     volumes:
-        - ./data:/var/lib/postgresql/data
+        - db-data:/var/lib/postgresql/data
     ports:
         - 5432:5432
     networks:
@@ -47,3 +47,7 @@ networks:
 
   api-network:
     driver: bridge
+
+volumes:
+  db-data: 
+    driver: local
